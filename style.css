@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+}
+
+/* Navigation Bar using Flexbox */
+nav {
+    background-color: #163b5c;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 70px 30px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+
+button {
+    background-color: #1f4e79;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.hero button {
+    background-color: white;
+    color: #1f4e79;
+    font-weight: bold;
+}
+
+.section {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+.section h2 {
+    color: #1f4e79;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Flexbox Layout */
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.small-card {
+    background-color: white;
+    width: 220px;
+    padding: 25px;
+    text-align: center;
+    border-left: 5px solid #1f4e79;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.small-card h3 {
+    color: #1f4e79;
+    font-size: 32px;
+}
+
+/* Grid Layout */
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.course-card,
+.api-card {
+    background-color: white;
+    padding: 25px;
+    border-left: 5px solid #1f4e79;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.course-card h3,
+.api-card h3 {
+    color: #1f4e79;
+    margin-bottom: 10px;
+}
+
+/* API Section using Grid */
+.api-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+form {
+    background-color: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Modal */
+dialog {
+    width: 350px;
+    padding: 25px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+dialog h2 {
+    color: #1f4e79;
+    margin-bottom: 10px;
+}
+
+dialog p {
+    margin-bottom: 15px;
+}
+
+dialog::backdrop {
+    background-color: rgba(0,0,0,0.5);
+}
+
+footer {
+    background-color: #163b5c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

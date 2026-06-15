@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSD Lab 2 - LMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <h2>Joshi LMS</h2>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#api">HTML5 API</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Learning Management System</h1>
+        <p>
+            A simple LMS web application using Flexbox, Grid Layout,
+            HTML5 APIs, Navigation Bar, Hero Section and Modal.
+        </p>
+        <button onclick="openModal()">About Project</button>
+    </section>
+
+    <!-- Modal -->
+    <dialog id="myModal">
+        <h2>About This LMS</h2>
+        <p>
+            This LMS helps students view courses and save simple student details.
+            This project is created for FSD Lab 2.
+        </p>
+        <button onclick="closeModal()">Close</button>
+    </dialog>
+
+    <!-- Flexbox Layout -->
+    <section class="section">
+        <h2>Student Dashboard - Flexbox</h2>
+
+        <div class="flex-box">
+            <div class="small-card">
+                <h3>4</h3>
+                <p>Courses</p>
+            </div>
+
+            <div class="small-card">
+                <h3>3</h3>
+                <p>Assignments</p>
+            </div>
+
+            <div class="small-card">
+                <h3>8</h3>
+                <p>Materials</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grid Layout -->
+    <section class="section" id="courses">
+        <h2>Courses - Grid Layout</h2>
+
+        <div class="grid-box">
+            <div class="course-card">
+                <h3>Full Stack Development</h3>
+                <p><b>Teacher:</b> FSD Faculty</p>
+                <p>Learn HTML, CSS and basic web development.</p>
+            </div>
+
+            <div class="course-card">
+                <h3>Advanced Database Technologies</h3>
+                <p><b>Teacher:</b> Neetha S</p>
+                <p>Learn tables, SQL queries and database design.</p>
+            </div>
+
+            <div class="course-card">
+                <h3>Computer Organization and Design</h3>
+                <p><b>Teacher:</b> Kavitha R</p>
+                <p>Learn logic gates, number system and CPU basics.</p>
+            </div>
+
+            <div class="course-card">
+                <h3>C Programming</h3>
+                <p><b>Teacher:</b> Shoney Sebastian</p>
+                <p>Learn variables, loops, arrays and functions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HTML5 APIs -->
+    <section class="section" id="api">
+        <h2>HTML5 APIs</h2>
+
+        <div class="api-area">
+            <div class="api-card">
+                <h3>Local Storage API</h3>
+                <p>Save student name in the browser.</p>
+
+                <input type="text" id="studentName" placeholder="Enter student name">
+                <button onclick="saveName()">Save</button>
+                <button onclick="showName()">Show</button>
+
+                <p id="nameOutput"></p>
+            </div>
+
+            <div class="api-card">
+                <h3>Geolocation API</h3>
+                <p>Display current location latitude and longitude.</p>
+
+                <button onclick="getLocation()">Get Location</button>
+
+                <p id="locationOutput"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="section" id="contact">
+        <h2>Contact</h2>
+
+        <form>
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Message</label>
+            <textarea placeholder="Enter message"></textarea>
+
+            <button type="button" onclick="openModal()">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>FSD Lab 2 | Learning Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
